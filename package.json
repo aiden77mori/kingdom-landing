@@ -1,6 +1,8 @@
 {
   "name": "game-landing",
   "version": "0.1.0",
+  "title": "Kingdom Blockchin Game",
+  "description": "This is Kingdom blockchain game managed by Difines business.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
