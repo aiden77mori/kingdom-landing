@@ -1,7 +1,21 @@
+import { Helmet } from "react-helmet-async";
+
+// components
+import Hero from "./Hero";
+
+// style
+import "./Home.scss";
+
 function Home() {
   return (
     <>
-      <p>Landing Page</p>
+      <Helmet>
+        <title>KINGDOM | Home</title>
+      </Helmet>
+      <div className="home">
+        <Hero />
+        <p>Landing Page</p>
+      </div>
     </>
   );
 }
