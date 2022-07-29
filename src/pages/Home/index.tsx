@@ -2,6 +2,11 @@ import { Helmet } from "react-helmet-async";
 
 // components
 import Hero from "./Hero";
+import Intro from "./Intro";
+import Character from "./Character";
+import PlayToEarnCard from "./PlayToEarnCard";
+import Feature from "./Feature";
+import Partner from "./Partner";
 
 // style
 import "./Home.scss";
@@ -14,7 +19,11 @@ function Home() {
       </Helmet>
       <div className="home">
         <Hero />
-        <p>Landing Page</p>
+        <Intro /> 
+        <Character />
+        <PlayToEarnCard />
+        <Feature />
+        <Partner />
       </div>
     </>
   );

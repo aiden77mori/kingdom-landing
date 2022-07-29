@@ -1,7 +1,242 @@
 .home {
   .hero-section {
+    display: flex;
     .hero-img {
       width: 100%;
+    }
+  }
+
+  .intro-section {
+    background: #1f243a;
+    .container {
+      .intro-back {
+        position: relative;
+        max-width: 1194px;
+        margin: 0 auto;
+        .intro-bg {
+          position: relative;
+        }
+        .intro-content {
+          padding: 0 105px 65px 105px;
+          position: absolute;
+          top: 0;
+          color: #fff;
+          height: 100%;
+          h1 {
+            text-align: center;
+            padding: 50px 0;
+          }
+          .down {
+            padding-top: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  .character-section {
+    display: flex;
+    background: #1f243a;
+    .container {
+      .inner-section {
+        padding: 50px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .left {
+          width: 50%;
+          z-index: 10;
+          .heading {
+            font-size: 50px;
+            font-weight: 700;
+            background: -webkit-linear-gradient(
+              180deg,
+              #42bbff 0%,
+              #ffffff 100%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .line-rectangle {
+            position: relative;
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            .character-rectangle {
+              position: absolute;
+              padding: inherit;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .description {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+          }
+          .character-group {
+            display: flex;
+          }
+        }
+        .right {
+          position: relative;
+          z-index: 10;
+          .character-main {
+            z-index: 10;
+            width: 100%;
+          }
+        }
+        .character-bg {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 5;
+          padding: inherit;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .playtoearn-section {
+    display: flex;
+    background: #1f243a;
+    padding: 0 0 70px 0;
+    .container {
+      .nav-section {
+        position: relative;
+        .content {
+          padding: 42px 235px 16px 235px;
+          text-align: center;
+          .heading {
+            font-size: 35px;
+            font-weight: 700;
+            color: #fff;
+          }
+          .description {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            padding: 20px;
+          }
+        }
+        .pbg {
+          width: 100%;
+          position: absolute;
+          top: 9px;
+        }
+        .pvt {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .play-vector1 {
+          top: 5px;
+        }
+        .play-vector2 {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .feature-section {
+    background: #31395b;
+    padding: 80px 0;
+    .container {
+      .nav-section {
+        .heading {
+          font-size: 35px;
+          font-weight: 700;
+          color: #fff;
+          text-align: center;
+        }
+        .card-group {
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          padding-top: 36px;
+          .card:nth-child(2) {
+            margin-top: -10px;
+          }
+        }
+        .token-intro {
+          background: linear-gradient(90deg, #509fdc 12.67%, #d3abf6 103.79%);
+          padding: 22px 70px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 88px;
+          .left {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            text-align: center;
+            h1 {
+              color: #fff;
+              font-size: 35px;
+              font-weight: 700;
+            }
+            p {
+              font-size: 15px;
+              font-weight: 700;
+              color: #fff;
+              margin-top: 30px;
+            }
+          }
+          .right {
+            display: flex;
+            .token-card {
+              border: 1px solid #9cd4ff;
+              border-radius: 5px;
+              padding: 5px;
+              .nav-card {
+                background: #9cd4ff;
+                padding: 13px 10px 18px 10px;
+                min-width: 180px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                  width: 135px;
+                  height: 135px;
+                }
+                .token-title {
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: 700;
+                  margin-top: 20px;
+                }
+              }
+            }
+            .token-card:nth-child(1) {
+              margin-right: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .partner-section {
+    background: #5869b1;
+    padding: 60px 0;
+    .nav-section {
+      .heading {
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+      }
+      .content {
+        margin-top: 46px;
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+      }
     }
   }
 }
