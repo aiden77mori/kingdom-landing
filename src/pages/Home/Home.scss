@@ -4,6 +4,9 @@
     .hero-img {
       width: 100%;
     }
+    @media (max-width: 768px) {
+      padding-top: 80px;
+    }
   }
 
   .intro-section {
@@ -13,8 +16,19 @@
         position: relative;
         max-width: 1194px;
         margin: 0 auto;
+        height: auto;
         .intro-bg {
           position: relative;
+          width: 100%;
+          @media (max-width: 1024px) {
+            height: 330px;
+          }
+          @media (max-width: 768px) {
+            height: 220px;
+          }
+          @media (max-width: 425px) {
+            height: 330px;
+          }
         }
         .intro-content {
           padding: 0 105px 65px 105px;
@@ -22,12 +36,27 @@
           top: 0;
           color: #fff;
           height: 100%;
+          @media (max-width: 768px) {
+            padding: 20px;
+          }
           h1 {
             text-align: center;
             padding: 50px 0;
+            @media (max-width: 768px) {
+              padding: 10px 0;
+              font-size: 18px;
+            }
+          }
+          .description {
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
           }
           .down {
             padding-top: 27px;
+            @media (max-width: 768px) {
+              padding-top: 10px;
+            }
           }
         }
       }
@@ -43,9 +72,16 @@
         position: relative;
         display: flex;
         align-items: center;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
         .left {
           width: 50%;
           z-index: 10;
+          @media (max-width: 768px) {
+            width: 100%;
+            order: 2;
+          }
           .heading {
             font-size: 50px;
             font-weight: 700;
@@ -56,12 +92,19 @@
             );
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            @media (max-width: 768px) {
+              font-size: 36px;
+              text-align: center;
+            }
           }
           .line-rectangle {
             position: relative;
             padding: 30px 0;
             display: flex;
             justify-content: center;
+            .character-line {
+              width: 100%;
+            }
             .character-rectangle {
               position: absolute;
               padding: inherit;
@@ -77,14 +120,26 @@
           }
           .character-group {
             display: flex;
+            width: 100%;
+            @media (max-width: 768px) {
+              justify-content: center;
+            }
           }
         }
         .right {
           position: relative;
           z-index: 10;
+          display: flex;
+          justify-content: center;
           .character-main {
             z-index: 10;
             width: 100%;
+            @media (max-width: 768px) {
+              width: 70%;
+            }
+          }
+          @media (max-width: 768px) {
+            order: 1;
           }
         }
         .character-bg {
@@ -94,6 +149,9 @@
           z-index: 5;
           padding: inherit;
           height: 100%;
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
       }
     }
@@ -109,22 +167,41 @@
         .content {
           padding: 42px 235px 16px 235px;
           text-align: center;
+          @media (max-width: 768px) {
+            padding: 20px;
+          }
           .heading {
             font-size: 35px;
             font-weight: 700;
             color: #fff;
+            @media (max-width: 768px) {
+              padding: 10px 0;
+              font-size: 18px;
+            }
           }
           .description {
             font-size: 16px;
             font-weight: 400;
             color: #fff;
             padding: 20px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
           }
         }
         .pbg {
           width: 100%;
           position: absolute;
           top: 9px;
+          @media (max-width: 1024px) {
+            height: 380px;
+          }
+          @media (max-width: 768px) {
+            height: 280px;
+          }
+          @media (max-width: 425px) {
+            height: 350px;
+          }
         }
         .pvt {
           position: absolute;
@@ -133,9 +210,11 @@
         }
         .play-vector1 {
           top: 5px;
+          width: 100%;
         }
         .play-vector2 {
           top: 0;
+          width: 100%;
         }
       }
     }
@@ -151,14 +230,24 @@
           font-weight: 700;
           color: #fff;
           text-align: center;
+          @media (max-width: 768px) {
+            font-size: 28px;
+          }
         }
         .card-group {
           display: flex;
           justify-content: space-between;
           text-align: center;
           padding-top: 36px;
+          gap: 20px;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
           .card:nth-child(2) {
             margin-top: -10px;
+            @media (max-width: 768px) {
+              margin-top: 0;
+            }
           }
         }
         .token-intro {
@@ -168,11 +257,17 @@
           align-items: center;
           justify-content: space-between;
           margin-top: 88px;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
           .left {
             display: flex;
             flex-direction: column;
-            width: 50%;
             text-align: center;
+            width: 50%;
+            @media (max-width: 768px) {
+              width: 100%;
+            }
             h1 {
               color: #fff;
               font-size: 35px;
@@ -187,6 +282,13 @@
           }
           .right {
             display: flex;
+            gap: 20px;
+            @media (max-width: 768px) {
+              padding-top: 20px;
+            }
+            @media (max-width: 425px) {
+              flex-direction: column;
+            }
             .token-card {
               border: 1px solid #9cd4ff;
               border-radius: 5px;
@@ -210,9 +312,9 @@
                 }
               }
             }
-            .token-card:nth-child(1) {
-              margin-right: 22px;
-            }
+            // .token-card:nth-child(1) {
+            //   margin-right: 22px;
+            // }
           }
         }
       }
@@ -236,6 +338,12 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-items: center;
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 425px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
     }
   }

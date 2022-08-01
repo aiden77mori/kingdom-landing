@@ -10,23 +10,65 @@
     rgba(3, 6, 66, 0.5) 52%,
     rgba(3, 6, 66, 0) 100%
   );
-
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .menu {
+  @media (max-width: 768px) {
+    top: 0;
+    background: #1f243a;
+  }
+  .container {
+    .content {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      color: #fff;
-      .menu-item {
-        padding: 0 20px;
+      .hamburger {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
       }
-      .social-group {
+      .fade {
         display: flex;
-        img {
-          padding: 0 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        background: #000000e6;
+        .close {
+          position: absolute;
+          right: 30px;
+          top: 30px;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+        .menu-item {
+          padding: 0 20px;
+          @media (max-width: 768px) {
+            padding: 10px 20px;
+          }
+        }
+        .social-group {
+          display: flex;
+          @media (max-width: 768px) {
+            padding-top: 20px;
+          }
+          img {
+            padding: 0 10px;
+          }
         }
       }
     }
